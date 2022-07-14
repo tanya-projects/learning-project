@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href='icon.png'>
+    <title>BGC Changer</title>
+  </head>
+  <body>
+<!-- main window -->
+    <div class="half blue--half">
+      <div class="option random-option">
+        <h3 class="option--label ">RANDOM<br />BACKGROUND COLOR</h3>
+        <button class="btn btn--blue btn--random">CHOOSE</button>
+      </div>
+    </div>
+    <div class="half violet--half">
+      <div class="option set-option">
+        <h3 class="option--label label--white">SET<br />BACKGROUND COLOR</h3>
+        <button class="btn btn--violet btn--set">CHOOSE</button>
+      </div>
+    </div>
+    </div> 
+
+<!-- random color window -->
+<div class="random--window random--clicked-opacity">
+  <button class="btn btn--blue btn--change">CHANGE COLOR</button>
+  <p class="result-rgb">RGB (170, 199, 255)
+  </p>
+  <div class="checkbox-for-btn">
+  <input type="checkbox" id="include-choose" class="include-choose-btn">
+  <label for="include-choose" class="include--label">INCLUDE BUTTON</label>
+</div>
+</div>
+   
+   
+<!-- Set color window -->
+<div class="setcolor--window">
+  <h3 class="option--label label--white">SET COLOR</h3>
+  <div class="set-rgb--container">
+      <div class="rgb--row">
+          <h4 class="rgb1">R</h4>
+          <input type="text" placeholder="115" id="input--rgb-red" class="input--rgb">
+      </div>
+      <div class="rgb--row">
+          <h4 class="rgb1">G</h4>
+          <input type="text" placeholder="96" id="input--rgb-green" class="input--rgb">
+      </div>
+      <div class="rgb--row">
+          <h4 class="rgb1">B</h4>
+          <input type="text" placeholder="144" id="input--rgb-blue" class="input--rgb">
+      </div>
+      <button class="btn btn--blue change-to-set">CHANGE</button>
+  </div>
+</div>
+<button class="btn back random--clicked-opacity">BACK</button>
+    <script src="script-clean.js"></script>
+  </body>
+</html>
